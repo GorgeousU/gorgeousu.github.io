@@ -1,6 +1,6 @@
 ---
 title: 搭建 GitHub 个人网站指南  # 覆盖 _config.yml 中的默认标题
-layout: default
+layout: /docs/guide/
 ---
 # 欢迎阅读指南
 
