@@ -3,6 +3,8 @@ title: Gorgeousu's Docs
 description: 个人技术文档与指南
 url: "https://gorgeousu.github.io"  # 必须填写！用于生成正确链接
 baseurl: ""                         # GitHub Pages 根域名部署必须为空
+remote_theme: pages-themes/primer@v0.2.0
+include: [docs]
 
 # ===== 构建设置（GitHub Pages 强制使用，保留以防本地预览）=====
 markdown: kramdown
