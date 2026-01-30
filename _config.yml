@@ -1,37 +1,35 @@
 # ===== 基础信息 =====
 title: Gorgeousu's Docs
 description: 个人技术文档与指南
-url: "https://gorgeousu.github.io"  # 必须填写！用于生成正确链接
-baseurl: ""                         # GitHub Pages 根域名部署必须为空
-remote_theme: pages-themes/primer@v0.2.0
-include: [docs]
+url: "https://gorgeousu.github.io"
+baseurl: ""
 
-# ===== 构建设置（GitHub Pages 强制使用，保留以防本地预览）=====
+# ===== 构建设置 =====
 markdown: kramdown
 highlighter: rouge
-lsi: false
 excerpt_separator: "\n\n"
 
-# ===== 插件（仅使用 GitHub Pages 白名单插件）=====
+# ===== 插件（仅白名单插件）=====
 plugins:
-  - jemoji          # 支持 :smile: 等 emoji
-  - jekyll-seo-tag  # 自动生成 SEO 标签（需在 layout 中添加 {% seo %}）
-  - jekyll-sitemap  # 自动生成 sitemap.xml（利于搜索引擎收录）
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# ===== 默认 Front Matter（关键！自动应用到 docs/ 下所有 .md）=====
+# ===== 默认 Front Matter =====
 defaults:
   - scope:
-      path: "docs"    # 仅作用于 docs 目录
+      path: "docs"
       type: "pages"
     values:
-      layout: "default"      # 使用 _layouts/default.html
-      permalink: "/:path/"   # 生成 /docs/guide/ 而非 .html（需末尾斜杠）
-      title: "文档"          # 默认标题（可在单个 .md 中覆盖）
+      layout: "default"
+      permalink: "/:path/"
+      title: "文档"
 
-# ===== 排除文件（避免构建干扰）=====
+# ===== 包含/排除规则（必须放在文件底部）=====
+include: [docs]  # 关键！显式包含 docs 目录
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
   - .gitignore
-  - CNAME  # 如有自定义域名需求请删除此行
+  - CNAME
