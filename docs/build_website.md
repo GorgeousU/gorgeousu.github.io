@@ -1,3 +1,8 @@
+---
+title: 搭建 GitHub 个人网站指南
+layout: /docs/build_website/
+---
+
 参考：[https://classicalqy.github.io/website_building/](https://classicalqy.github.io/website_building/)
 
 网站模板：
