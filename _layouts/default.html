@@ -65,10 +65,14 @@
            class="UnderlineNav-item {% if page.url == '/' %}selected{% endif %}">
           首页
         </a>
+        <a href="{{ '/docs/guide/' | relative_url }}" 
+           class="UnderlineNav-item {% if page.url contains '/docs/' %}selected{% endif %}">
+          引导
+        </a>
         <a href="{{ '/docs/build_website/' | relative_url }}" 
            class="UnderlineNav-item {% if page.url contains '/docs/' %}selected{% endif %}">
           搭建指南
-        </a>build_website
+        </a>
         <!-- 可扩展更多导航项 -->
       </nav>
     </div>
